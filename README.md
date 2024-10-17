@@ -1,4 +1,5 @@
-# Projeto Final
+<h1>Projeto Final</h1>
+<h2>Digital Store<h2/>
 <h6>Geração Tech 2ª ed.</h6>
 
 ## Descrição
