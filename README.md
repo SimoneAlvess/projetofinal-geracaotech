@@ -1,13 +1,46 @@
-<div align="center">
-  <h1>Projeto Final</h1>
-  <h3>Digital Store</h3>
-  <h6>Geração Tech 2ª ed.</h6>
-</div>
+<h1>Projeto Final | Digital Store</h1>
 
-## Descrição
+- [Descrição](#-descrição)
+- [Estrutura do Projeto](#-estrutura-do-projeto)
+- [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+
+## 📝 Descrição
 Este projeto foi desenvolvido com base nas aulas do curso Geração Tech 2ª ed., como parte da avaliação final. O foco do projeto inclui a criação de componentes reutilizáveis, o gerenciamento eficiente de estado e a implementação de roteamento, entre outros conceitos e métodos abordados durante o curso.
 
-## Tecnologias Utilizadas
+
+## 📁 Estrutura do Projeto
+
+```
+├── src/
+|   ├── assets
+│   ├── compoments/
+│   │   ├── Header
+│   │   ├── Footer
+│   │   ├── Logo
+│   │   ├── ProductListing
+│   │   ├── ProductCard
+│   │   ├── ProductOptions
+│   │   ├── BuyBox
+│   │   ├── Section
+│   │   ├── FilterGroup
+│   │   ├── InfoComponent
+|   |   ├── Gallery
+│   └── pages/
+│       ├── HomePage
+│       ├── ProductViewPage
+│       ├── ProductListingPage
+|       ├── Layout
+|       ├── Notfound
+|   └── routes/
+|       ├── Paths
+|   └── styles/
+|       ├── StylesGlobal
+├── App.jsx
+└── main.jsx
+
+```
+
+## 🚀 Tecnologias Utilizadas
 - React
 - React Router
 - React Helmet
@@ -18,5 +51,3 @@ Este projeto foi desenvolvido com base nas aulas do curso Geração Tech 2ª ed.
 - Bootstrap
 - PrimeReact
 
-## Estrutura do Projeto
-src/ |-- components/ | |-- FilterGroup.js | |-- Layout.js | |-- Logo.js | |-- ProductCard.js | |-- ProductListing.js | |-- ProductOptions.js | |-- Section.js | |-- pages/ | |-- HomePage.js | |-- ProductListingPage.js | |-- assets/ | |-- logo-header.svg | |-- mini-cart.svg | |-- product-thumb-1.jpeg | |-- product-thumb-2.jpeg | |-- styles/ | |-- StylesGlobal.js | |-- App.js |-- index.js
