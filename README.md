@@ -1,6 +1,8 @@
+<div>
 <h1>Projeto Final</h1>
-<h2>Digital Store<h2/>
+<h3>Digital Store<h3/>
 <h6>Geração Tech 2ª ed.</h6>
+</div>
 
 ## Descrição
 Este projeto foi desenvolvido com base nas aulas do curso Geração Tech 2ª ed., como parte da avaliação final. O foco do projeto inclui a criação de componentes reutilizáveis, o gerenciamento eficiente de estado e a implementação de roteamento, entre outros conceitos e métodos abordados durante o curso.
