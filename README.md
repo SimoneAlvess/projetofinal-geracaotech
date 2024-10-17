@@ -1,7 +1,7 @@
-<div>
-<h1>Projeto Final</h1>
-<h3>Digital Store<h3/>
-<h6>Geração Tech 2ª ed.</h6>
+<div align="center">
+  <h1>Projeto Final</h1>
+  <h3>Digital Store</h3>
+  <h6>Geração Tech 2ª ed.</h6>
 </div>
 
 ## Descrição
