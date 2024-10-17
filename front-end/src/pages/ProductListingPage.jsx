@@ -1,6 +1,7 @@
 import { ProductListingContainer } from "../styles/StylesGlobal";
 import FilterGroup from "../components/FilterGroup";
 import Section from "../components/Section";
+import Helmet from "react-helmet";
 import ProductListing from "../components/ProductListing";
 
 const ProductListingPage = () => {
@@ -43,7 +44,8 @@ const ProductListingPage = () => {
 
   return (
     <>
-      <ProductListingContainer className="container">
+      <Helmet title="Produtos | Digital Store" />
+      <ProductListingContainer>
         <aside>
           <div className="select-container">
             <label htmlFor="opcoes">Ordenar por</label>
@@ -61,7 +63,7 @@ const ProductListingPage = () => {
             <FilterGroup title="Estado" inputType="radio" options={stateOptions} />
           </div>
         </aside>
-        <Section title="Total de produtos encontrados" titleAlign="left">
+        <Section title="Total de produtos encontrados" titleAlign="left" className="">
           <ProductListing products={products} columns={3} />
         </Section>
       </ProductListingContainer>

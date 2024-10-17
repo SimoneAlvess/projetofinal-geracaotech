@@ -1,10 +1,12 @@
 import { CardContainer } from "../styles/StylesGlobal";
 
-const ProductCard = ({ image, name, price, priceDiscount }) => {
+const ProductCard = ({ image, name, price, priceDiscount, size }) => {
   return (
     <>
       <CardContainer>
-        <img src={image} alt={name}/>
+        <a href="/product/:id">
+          <img src={image} alt={name} className={size === "small" ? "small-image" : ""} />
+        </a>
         <h2>{name}</h2>
         <div className="product-price">
           {priceDiscount ? (
