@@ -44,6 +44,7 @@ Este projeto foi desenvolvido com base nas aulas do curso Geração Tech 2ª ed.
 - React
 - React Router
 - React Helmet
+- Vite
 - Styled-components
 - PropTypes
 - Javascript
