@@ -56,7 +56,5 @@ Este projeto foi desenvolvido com base nas aulas do curso Geração Tech 2ª ed.
 ## 📷 Imagens do Projeto
 
 <div style="display: flex;">
-<img src="front-end/public/captura-tela-home.jpeg" alt="home" width="500" height="900"/>
-<img src="front-end/public/captura-tela-produtos.jpeg" alt="home" width="500" height="900"/>
-<img src="front-end/public/captura-tela-produto-id.jpeg" alt="home" width="500" height="900"/>
+<img src="front-end/public/captura-telas-site.png" alt="site" />
 </div>
