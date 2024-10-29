@@ -58,3 +58,5 @@ Este projeto foi desenvolvido com base nas aulas do curso Geração Tech 2ª ed.
 <div style="display: flex;">
 <img src="front-end/public/captura-telas-site.png" alt="site" />
 </div>
+
+---
