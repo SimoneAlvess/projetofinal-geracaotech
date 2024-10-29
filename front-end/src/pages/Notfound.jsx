@@ -4,7 +4,7 @@ import Helmet from "react-helmet";
 const Notfound = () => {
   return (
     <>
-      <Helmet title="Erro 404 | Digital Store" />
+      <Helmet title="Error 404 | Digital Store" />
       <div className="h-screen flex flex-column align-items-center justify-content-center bg-dark text-white">
         <span className="pi pi-exclamation-triangle pb-3" style={{ fontSize: "10rem", color: "#C92071" }}></span>
         <h2>404 Página não encontrada</h2>
