@@ -3,6 +3,7 @@
 - [Descrição](#-descrição)
 - [Estrutura do Projeto](#-estrutura-do-projeto)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Imagens do Projeto](#-imagens-do-projeto)
 
 ## 📝 Descrição
 Este projeto foi desenvolvido com base nas aulas do curso Geração Tech 2ª ed., como parte da avaliação final. O foco do projeto inclui a criação de componentes reutilizáveis, o gerenciamento eficiente de estado e a implementação de roteamento, entre outros conceitos e métodos abordados durante o curso.
@@ -52,3 +53,10 @@ Este projeto foi desenvolvido com base nas aulas do curso Geração Tech 2ª ed.
 - Bootstrap
 - PrimeReact
 
+## 📷 Imagens do Projeto
+
+<div style="display: flex;">
+<img src="front-end/public/captura-tela-home.jpeg" alt="home" width="500" height="900"/>
+<img src="front-end/public/captura-tela-produtos.jpeg" alt="home" width="500" height="900"/>
+<img src="front-end/public/captura-tela-produto-id.jpeg" alt="home" width="500" height="900"/>
+</div>
