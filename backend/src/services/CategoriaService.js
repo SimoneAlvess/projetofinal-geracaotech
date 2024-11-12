@@ -58,7 +58,12 @@ const getCategoriaById = async (req, res) => {
       return res.status(404).json({ error: "Categoria nao encontrada" });
     }
 
-    res.status(200).json(categoria);
+    res.status(200).json({
+      id: categoria.id,
+      name: categoria.name,
+      slug: categoria.slug,
+      use_in_menu: categoria.use_in_menu,
+    });
   } catch (error) {
     res.status(500).json({ error: "Erro interno do servidor" });
   }
@@ -73,7 +78,11 @@ const createCategoria = async (req, res) => {
   }
   try {
     const categoria = await Categoria.create({ name, slug, use_in_menu });
-    res.status(201).json(categoria);
+    res.status(201).json({
+      name: categoria.name,
+      slug: categoria.slug,
+      use_in_menu: categoria.use_in_menu,
+    });
   } catch (error) {
     res.status(500).json({ error: "Erro interno do servidor" });
   }

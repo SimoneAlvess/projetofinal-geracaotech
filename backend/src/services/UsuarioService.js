@@ -22,8 +22,12 @@ const login = async (email, password) => {
 //LISTAGEM DE TODOS OS USUÁRIOS
 const getUsuario = async (req, res) => {
   try {
-    const usuarios = await Usuario.findAll();
-    res.status(200).json(usuarios);
+    const usuario = await Usuario.findAll(
+      {
+        attributes: ["id", "firstname", "surname", "email"],
+      }
+    ); 
+    res.status(200).json(usuario);
   } catch (error) {
     res.status(500).json({ error: "Erro interno do servidor" });
   }

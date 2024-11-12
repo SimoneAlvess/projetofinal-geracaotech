@@ -84,10 +84,11 @@ const getProdutos = async (req, res) => {
       limit: limitValue,
       page: pageValue,
     };
-
+ 
     res.status(200).json(response);
   } catch (error) {
     console.error(error);
+   
     res.status(500).json({ error: "Erro interno do servidor" });
   }
 };
@@ -133,7 +134,6 @@ const getProdutoById = async (req, res) => {
         values: o.values.split(","),
       })),
     };
-
     res.status(200).json(resposta);
   } catch (error) {
     console.error(error);
@@ -202,6 +202,7 @@ const createProduto = async (req, res) => {
     }
     res.status(201).json({ message: "Produto criado com sucesso" });
   } catch (error) {
+    console.error(error);
     res.status(400).json({ error: "Dados de requisição inválidos" });
   }
 };
