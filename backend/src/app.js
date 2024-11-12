@@ -3,6 +3,7 @@ const app = express();
 const UsuarioRoutes = require("./routes/UsuarioRoutes");
 const AuthRoutes = require("./routes/AuthRoutes");
 const CategoriaRoutes = require("./routes/CategoriaRoutes");
+const ProdutoRoutes = require("./routes/ProdutoRoutes");
 
 app.use(express.json());
 
@@ -13,5 +14,7 @@ app.get("/", (req, res) => {
 app.use("/", AuthRoutes);
 app.use("/", UsuarioRoutes);
 app.use("/", CategoriaRoutes);
+app.use("/", ProdutoRoutes);
+
 
 module.exports = app;

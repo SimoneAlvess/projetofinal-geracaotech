@@ -1,6 +1,5 @@
 const connection = require("../config/connection");
 const { DataTypes } = require("sequelize");
-
 const Produto = require("./Produto");
 
 const OpcaoProduto = connection.define(
@@ -49,11 +48,8 @@ const OpcaoProduto = connection.define(
   }
 );
 
-Produto.hasMany(OpcaoProduto, {
-  foreignKey: "produto_id",
-});
-OpcaoProduto.belongsTo(Produto, {
-  foreignKey: "produto_id",
-});
+
+Produto.hasMany(OpcaoProduto, { foreignKey: "produto_id" });
+OpcaoProduto.belongsTo(Produto, { foreignKey: "produto_id" });
 
 module.exports = OpcaoProduto;

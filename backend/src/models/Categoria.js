@@ -2,7 +2,7 @@ const connection = require("../config/connection");
 const { DataTypes } = require("sequelize");
 
 const Categoria = connection.define(
-  "CategoriaModel",
+  "Categoria",
   {
     id: {
       type: DataTypes.INTEGER,

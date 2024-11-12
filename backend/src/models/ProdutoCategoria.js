@@ -1,6 +1,5 @@
 const connection = require("../config/connection");
 const { DataTypes } = require("sequelize");
-
 const Produto = require("./Produto");
 const Categoria = require("./Categoria");
 
@@ -30,7 +29,7 @@ const ProdutoCategoria = connection.define(
   }
 );
 
-Produto.belongsToMany(Categoria, { through: ProdutoCategoria, foreignKey: "produto_id" });
+Produto.belongsToMany(Categoria, { through: ProdutoCategoria, foreignKey: "produto_id"});
 Categoria.belongsToMany(Produto, { through: ProdutoCategoria, foreignKey: "categoria_id" });
 
 module.exports = ProdutoCategoria;

@@ -25,20 +25,18 @@ const getUsuario = async (req, res) => {
     const usuarios = await Usuario.findAll();
     res.status(200).json(usuarios);
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: "Erro interno do servidor" });
   }
 };
 
 //LISTAGEM POR ID
 const getUsuarioById = async (req, res) => {
   const { id } = req.params;
-
   try {
     const usuario = await Usuario.findByPk(id);
     if (!usuario) {
       return res.status(404).json({ error: "Usuário não encontrado" });
     }
-
     res.status(200).json({
       id: usuario.id,
       firstname: usuario.firstname,
@@ -46,18 +44,16 @@ const getUsuarioById = async (req, res) => {
       email: usuario.email,
     });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: "Erro interno do servidor" });
   }
 };
 
 //CRIAR USUÁRIO
 const createUsuario = async (req, res) => {
   const { firstname, surname, email, password, confirmPassword } = req.body;
-
   if (password !== confirmPassword) {
     return res.status(400).json({ error: "As senhas não coincidem" });
   }
-
   try {
     const usuarioExistente = await Usuario.findOne({ where: { email } });
     if (usuarioExistente) {
@@ -65,14 +61,13 @@ const createUsuario = async (req, res) => {
     }
     //CRIPTOGRAFIA DE SENHA
     const hashPassword = await bcrypt.hash(password, 10);
-
     const usuario = await Usuario.create({
       firstname,
       surname,
       email,
       password: hashPassword,
     });
-
+    
     res.status(201).json({
       id: usuario.id,
       firstname: usuario.firstname,
@@ -80,7 +75,7 @@ const createUsuario = async (req, res) => {
       email: usuario.email,
     });
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: "Erro interno do servidor" });
   }
 };
 
@@ -88,17 +83,14 @@ const createUsuario = async (req, res) => {
 const updateUsuario = async (req, res) => {
   const { id } = req.params;
   const { firstname, surname, email } = req.body;
-
   try {
     const usuario = await Usuario.findByPk(id);
     if (!usuario) {
       return res.status(404).json({ error: "Usuário não encontrado" });
     }
-
     usuario.firstname = firstname;
     usuario.surname = surname;
     usuario.email = email;
-
     await usuario.save();
     res.status(204).send();
   } catch (error) {
@@ -109,17 +101,15 @@ const updateUsuario = async (req, res) => {
 //DELETAR USUÁRIO
 const deleteUsuario = async (req, res) => {
   const { id } = req.params;
-
   try {
     const usuario = await Usuario.findByPk(id);
     if (!usuario) {
       return res.status(404).json({ error: "Usuário não encontrado" });
     }
-
     await usuario.destroy();
     res.status(204).send();
   } catch (error) {
-    res.status(500).json({ error: error.message });
+    res.status(500).json({ error: "Erro interno do servidor" });
   }
 };
 

@@ -1,6 +1,5 @@
 const connection = require("../config/connection");
 const { DataTypes } = require("sequelize");
-
 const Produto = require("./Produto");
 
 const ImagemProduto = connection.define(
