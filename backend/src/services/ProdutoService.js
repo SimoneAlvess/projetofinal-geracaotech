@@ -6,6 +6,7 @@ const Categoria = require("../models/Categoria");
 const fs = require("fs");
 const path = require("path");
 const { Op } = require("sequelize");
+const e = require("express");
 
 const getProdutos = async (req, res) => {
   const { limit = 12, page = 1, fields, match, category_ids, "price-range": priceRange, ...options } = req.query;
@@ -203,7 +204,7 @@ const createProduto = async (req, res) => {
     res.status(201).json({ message: "Produto criado com sucesso" });
   } catch (error) {
     console.error(error);
-    res.status(400).json({ error: "Dados de requisição inválidos" });
+    res.status(400).json({ error: error.message });
   }
 };
 
