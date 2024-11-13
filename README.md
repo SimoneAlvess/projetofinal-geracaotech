@@ -40,24 +40,6 @@ Este projeto foi desenvolvido com base nas aulas do curso Geração Tech 2ª ed.
 └── main.jsx
 
 ```
-#### ⚙️ BACKEND
-```
-├── src/
-│   ├── config/
-│   ├── controllers/
-│   ├── database/
-│   ├── middleware/
-│   ├── models/
-│   ├── routes/
-│   ├── services/
-│   ├── app.js
-│   └── server.js
-├── tests/
-├── uploads/
-├── .env
-├── .gitignore
-└── package.json
-```
 
 ## 🚀 Tecnologias Utilizadas
 #### 🎨 FRONTEND
@@ -71,17 +53,8 @@ Este projeto foi desenvolvido com base nas aulas do curso Geração Tech 2ª ed.
 - CSS
 - Bootstrap
 - PrimeReact
-#### ⚙️ BACKEND
-- Node.js
-- Express.js 
-- Dotenv 
-- Nodemon 
-- MySQL
-- Sequelize 
-- JWT
 
 ## 🌐 Deploy do Projeto
 
-- Acesse a aplicação backend através do link: <a href="https://digital-store.up.railway.app/usuario" target="_blank">Digital Store API</a>
-- Acesse também documetação da api no <a href="https://documenter.getpostman.com/view/30198192/2sAY547eKH" target="_blank">Postman</a>
+-
 
